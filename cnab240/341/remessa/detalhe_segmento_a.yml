@@ -149,7 +149,7 @@ informacao_2:
   pos: [178,197]
   picture: 'X(20)'
 
-numero_documento:
+numero_documento_retorno:
   # Nº DO DOC/TED/ OP/ CHEQUE NO RETORNO
   pos: [198, 203]
   picture: 9(6)
@@ -203,6 +203,7 @@ finalidade_complementar:
   # ser acordada entre banco e cliente.
   pos: [225, 229]
   picture: 'X(5)'
+  default: ''
 
 aviso:
   # Código adotado pela FEBRABAN para identificar a necessidade de emissão de aviso de
