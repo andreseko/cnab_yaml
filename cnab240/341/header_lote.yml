@@ -129,7 +129,7 @@ identificacao_lancamento:
   # HP14 = PAGTO REMUNERACAO
   pos: [33, 36]
   picture: 'X(4)'
-  default: 'HP13'
+  default: ''
 
 uso_exclusivo_banco:
   # Preenchar em branco
@@ -148,14 +148,14 @@ agencia_dv:
   picture: 'X(1)'
   default: ''
 
-codigo_cedente:
+conta:
   # NÚMERO DE C/C DEBITADA
   pos: [59, 70]
   picture: '9(12)'
 
-codigo_cedente_dv:
+conta_dv:
   # Brancos
-  pos: [72, 72]
+  pos: [71, 71]
   picture: 'X(1)'
   default: ''
 
@@ -241,3 +241,4 @@ ocorrencias:
   # VER NOTA 10 do manual
   pos: [231, 240]
   picture: 'X(10)'
+  default: ''

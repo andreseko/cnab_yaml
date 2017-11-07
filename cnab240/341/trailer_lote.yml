@@ -28,7 +28,7 @@ valor_total_titulo_simples:
   picture: '9(16)V9(2)'
 
 uso_exclusivo_febraban_02:
-  pos: [47, 59]
+  pos: [42, 59]
   picture: '9(18)'
   default: '0'
 

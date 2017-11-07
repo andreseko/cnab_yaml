@@ -63,20 +63,12 @@ uso_exclusivo_febraban_03:
   picture: 'X(1)'
   default: ''
 
-codigo_cedente:
+conta_debitada:
   # NÚMERO DE C/C DEBITADA
-  # Remessa: Código do Convênio no Banco (sem operação), tamanho: 12 posições, no formato
-  # 0000CCCCCCCC.
-  # Retorno: Código do Convênio no Banco (com operação), tamanho: 12 posições, no formato
-  # 0OOOCCCCCCCC.
-  # Onde:
-  # 0 = zero
-  # OOO = Operação
-  # CCCCCCCC = Cedente
   pos: [59, 70]
   picture: '9(12)'
 
-uso_exclusivo_febraban_03:
+uso_exclusivo_febraban_04:
   # Brancos
   pos: [71, 71]
   picture: 'X(1)'
@@ -98,7 +90,7 @@ nome_banco:
   pos: [103, 132]
   picture: 'X(30)'
 
-uso_exclusivo_febraban_02:
+uso_exclusivo_febraban_05:
   # Texto de observações destinado para uso exclusivo da FEBRABAN. Preencher com Brancos.
   pos: [133, 142]
   picture: 'X(10)'
@@ -131,6 +123,7 @@ numero_sequencial_arquivo:
   # Evoluir um número seqüencial a cada header de arquivo.
   pos: [158, 166]
   picture: '9(9)'
+  default: '0'
 
 densidade_gravacao_arquivo:
   # Densidade de gravação (bpi), do arquivo encaminhado. Pode ser:
