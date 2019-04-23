@@ -4,7 +4,7 @@
 codigo_banco:
   # Código fornecido pelo Banco Central para identificação do Banco que está recebendo ou enviando o
   # arquivo, com o qual se firmou o contrato de prestação de serviços.
-  # CAIXA ECONÔMICA FEDERAL = ‘341’
+  # ITAU = ‘341’
   pos: [1, 3]
   picture: '9(3)'
 

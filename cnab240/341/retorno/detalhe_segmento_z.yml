@@ -1,0 +1,58 @@
+# Registro Detalhe - Segmento Z (OOpcional - Retorno)
+# Baseado na documentação do Itau
+
+codigo_banco:
+  # Código fornecido pelo Banco Central para identificação do Banco que está recebendo ou enviando o
+  # arquivo, com o qual se firmou o contrato de prestação de serviços.
+  # ITAU = ‘341’
+  pos: [1, 3]
+  picture: '9(3)'
+
+lote_servico:
+  # Lote de Serviço
+  # Número seqüencial para identificar cada lote de serviço.
+  # Preencher com '0001' para o primeiro lote do arquivo. Para os demais: número do lote anterior
+  # acrescido de 1. Deve ser o mesmo número dentro do lote. O número não poderá ser repetido dentro
+  # do arquivo.
+  # Se registro for Header do Arquivo = '0000'
+  # Se registro for Trailer do Arquivo = '9999'
+  pos: [4, 7]
+  picture: '9(4)'
+
+tipo_registro:
+  # Código adotado pela FEBRABAN para identificar o tipo de registro.
+  # '3' = Detalhe
+  pos: [8, 8]
+  picture: '9(1)'
+  default: '3'
+
+numero_sequencial_lote:
+  # Nº Sequencial do Registro no Lote
+  # Deve ser iniciado sempre em 1, em cada novo lote
+  pos: [9, 13]
+  picture: '9(5)'
+
+codigo_segmento:
+  # Código adotado pela FEBRABAN para identificar o segmento do registro.
+  pos: [14, 14]
+  picture: 'X(1)'
+  default: 'Z'
+
+autenticacao_eletronica:
+  # Tipo de movimento de acordo com tabela. (ver nota 10 TIPO DE MOVIMENTO no manual)
+  # ---------------------------------
+  # Código | Descrição
+  # ---------------------------------
+  pos: [15, 78]
+  picture: 'X(64)'
+  default: ''
+
+numero_documento_retorno:
+  pos: [79, 098]
+  picture: 'X(20)'
+  default: ''
+
+nosso_numero:
+  pos: [104, 118]
+  picture: 'X(15)'
+  default: ''
