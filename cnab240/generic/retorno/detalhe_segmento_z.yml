@@ -52,7 +52,17 @@ numero_documento_retorno:
   picture: 'X(20)'
   default: ''
 
+uso_exclusivo_febraban01:
+  pos: [99, 103]
+  picture: 'X(5)'
+  default: ''
+
 nosso_numero:
   pos: [104, 118]
   picture: 'X(15)'
+  default: ''
+
+uso_exclusivo_febraban02:
+  pos: [119, 240]
+  picture: 'X(122)'
   default: ''
